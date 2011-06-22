@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
 
   s.rubyforge_project = "compass-rmagick-engine"
   
-  s.add_dependency "compass", '~> 0.11.beta.5'
+  s.add_dependency "compass", '~> 0.11.3'
   s.add_dependency "rmagick", '~> 2.13.1'
   
 

@@ -2,7 +2,7 @@ require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 require 'compass-rmagick-engine'
 require 'digest/md5'
 
-describe Compass::Sprites do
+describe Compass::SassExtensions::Sprites::RmagickEngine do
 
   before :each do
     @images_src_path = File.join(File.dirname(__FILE__), 'test_project', 'public', 'images')
@@ -59,7 +59,7 @@ describe Compass::Sprites do
     SCSS
     css.should == <<-CSS
       .squares-sprite, .squares-ten-by-ten, .squares-twenty-by-twenty {
-        background: url('/squares-1cd84c9068.png') no-repeat;
+        background: url('/squares-s1cd84c9068.png') no-repeat;
       }
       
       .squares-ten-by-ten {
